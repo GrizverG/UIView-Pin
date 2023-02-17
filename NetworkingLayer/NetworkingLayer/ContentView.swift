@@ -14,8 +14,14 @@ struct ContentView: View {
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
             Text("Hello, world!")
+            Button("pressMe") {
+                QuotesWorker().fetchQuotes { response in
+                    print(response.quotes)
+                }
+            }
         }
         .padding()
+        
     }
 }
 
