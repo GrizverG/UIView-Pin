@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		12DA0B83297AED4300608040 /* UI-View-pin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UI-View-pin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		12DA0B83297AED4300608040 /* UIView+pin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UIView+pin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		12DA0B86297AED4300608040 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12DA0B88297AED4300608040 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		12DA0B8A297AED4300608040 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,7 +40,7 @@
 		12DA0B7A297AED4300608040 = {
 			isa = PBXGroup;
 			children = (
-				12DA0B85297AED4300608040 /* UI-View-pin */,
+				12DA0B85297AED4300608040 /* UIView+pin */,
 				12DA0B84297AED4300608040 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,12 +48,12 @@
 		12DA0B84297AED4300608040 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				12DA0B83297AED4300608040 /* UI-View-pin.app */,
+				12DA0B83297AED4300608040 /* UIView+pin.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		12DA0B85297AED4300608040 /* UI-View-pin */ = {
+		12DA0B85297AED4300608040 /* UIView+pin */ = {
 			isa = PBXGroup;
 			children = (
 				12DA0B86297AED4300608040 /* AppDelegate.swift */,
@@ -64,15 +64,15 @@
 				12DA0B94297AED4A00608040 /* Info.plist */,
 				12DA0B9A297AEDBF00608040 /* UI-View+pin.swift */,
 			);
-			path = "UI-View-pin";
+			path = "UIView+pin";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		12DA0B82297AED4300608040 /* UI-View-pin */ = {
+		12DA0B82297AED4300608040 /* UIView+pin */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 12DA0B97297AED4A00608040 /* Build configuration list for PBXNativeTarget "UI-View-pin" */;
+			buildConfigurationList = 12DA0B97297AED4A00608040 /* Build configuration list for PBXNativeTarget "UIView+pin" */;
 			buildPhases = (
 				12DA0B7F297AED4300608040 /* Sources */,
 				12DA0B80297AED4300608040 /* Frameworks */,
@@ -82,9 +82,9 @@
 			);
 			dependencies = (
 			);
-			name = "UI-View-pin";
+			name = "UIView+pin";
 			productName = "UI-View-pin";
-			productReference = 12DA0B83297AED4300608040 /* UI-View-pin.app */;
+			productReference = 12DA0B83297AED4300608040 /* UIView+pin.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +102,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 12DA0B7E297AED4300608040 /* Build configuration list for PBXProject "UI-View-pin" */;
+			buildConfigurationList = 12DA0B7E297AED4300608040 /* Build configuration list for PBXProject "UIView+pin" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +115,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				12DA0B82297AED4300608040 /* UI-View-pin */,
+				12DA0B82297AED4300608040 /* UIView+pin */,
 			);
 		};
 /* End PBXProject section */
@@ -280,7 +280,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "UI-View-pin/Info.plist";
+				INFOPLIST_FILE = "UIView+pin/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -290,7 +290,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.hse.UI-View-pin";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.hse.UIView+pin";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -306,7 +306,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "UI-View-pin/Info.plist";
+				INFOPLIST_FILE = "UIView+pin/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -316,7 +316,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.hse.UI-View-pin";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.hse.UIView+pin";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -327,7 +327,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		12DA0B7E297AED4300608040 /* Build configuration list for PBXProject "UI-View-pin" */ = {
+		12DA0B7E297AED4300608040 /* Build configuration list for PBXProject "UIView+pin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				12DA0B95297AED4A00608040 /* Debug */,
@@ -336,7 +336,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		12DA0B97297AED4A00608040 /* Build configuration list for PBXNativeTarget "UI-View-pin" */ = {
+		12DA0B97297AED4A00608040 /* Build configuration list for PBXNativeTarget "UIView+pin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				12DA0B98297AED4A00608040 /* Debug */,

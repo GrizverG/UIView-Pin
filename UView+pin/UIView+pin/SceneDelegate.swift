@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.swift
-//  UI-View-pin
+//  UIView+pin
 //
 //  Created by Vsevolod Melnik on 20.01.2023.
 //
