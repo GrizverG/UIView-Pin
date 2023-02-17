@@ -9,10 +9,14 @@ import Foundation
 
 enum QuotesEndpoint: Endpoint {
     case quotes
+    case carts
     
     var compositPath: String {
         switch self {
-        case .quotes: return "/quotes"
+        case .quotes:
+            return "/quotes"
+        case .carts:
+            return "/carts"
         }
     }
     

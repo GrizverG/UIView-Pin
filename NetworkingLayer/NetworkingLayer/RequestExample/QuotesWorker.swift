@@ -9,14 +9,28 @@ import Foundation
 
 final class QuotesWorker {
     private let networking = Networking(baseURL: "https://dummyjson.com")
-    
-    
-    
+
     // MARK: - Quotes
     func fetchQuotes(
-        completion: @escaping (QuotesResponse) -> Void
+        completion: @escaping (Result<QuotesResponse, Error>) -> Void
     ) {
-        let request = Request(endpoint: QuotesEndpoint.quotes)
+        let endpoint = QuotesEndpoint.quotes
+        fetch(endpoint: endpoint, completion: completion)
+    }
+
+    // MARK: - Carts
+    func fetchCarts(
+        completion: @escaping (Result<CartsResponse, Error>) -> Void
+    ) {
+        let endpoint = QuotesEndpoint.carts
+        fetch(endpoint: endpoint, completion: completion)
+    }
+
+    func fetch<T: Decodable>(
+        endpoint: Endpoint,
+        completion: @escaping (Result<T, Error>) -> Void
+    ) {
+        let request = Request(endpoint: endpoint)
         networking.execute(request) { result in
             switch result {
             case .success(let result):
@@ -27,11 +41,11 @@ final class QuotesWorker {
                 case 200...299:
                     guard
                         let data = result.data,
-                        let decodedData = try? JSONDecoder().decode(QuotesResponse.self, from: data)
+                        let decodedData = try? JSONDecoder().decode(T.self, from: data)
                     else {
                         return
                     }
-                    completion(decodedData)
+                    completion(.success(decodedData))
                 default: break
                 }
             default: break
