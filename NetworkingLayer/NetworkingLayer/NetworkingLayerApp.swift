@@ -13,7 +13,5 @@ struct NetworkingLayerApp: App {
         WindowGroup {
             ContentView()
         }
-        
     }
-  
 }
