@@ -15,7 +15,15 @@ final class Networking: NetworkingLogic {
     }
     
     func execute(_ request: Request, completion: @escaping (NetworkResult) -> Void) {
-        
+        guard let request = convert(request) else {
+            return
+        }
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            if let error = error {
+                completion(.failure(error))
+            }
+            completion(.success(NetworkModel.Result(data: data, response: response)))
+        }
     }
     
     private func convert(_ request: Request) -> URLRequest? {
