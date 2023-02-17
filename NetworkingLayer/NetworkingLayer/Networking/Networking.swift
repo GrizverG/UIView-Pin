@@ -24,6 +24,7 @@ final class Networking: NetworkingLogic {
             }
             completion(.success(NetworkModel.Result(data: data, response: response)))
         }
+        task.resume()
     }
     
     private func convert(_ request: Request) -> URLRequest? {

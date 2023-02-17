@@ -15,8 +15,8 @@ struct ContentView: View {
                 .foregroundColor(.accentColor)
             Text("Hello, world!")
             Button("pressMe") {
-                QuotesWorker().fetchQuotes { response in
-                    print(response.quotes)
+                QuotesWorker().fetchCarts { result in
+                    print(try? result.get().carts)
                 }
             }
         }
